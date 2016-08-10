@@ -1,7 +1,7 @@
 " ========================================================================
 " Plugins - uses vim-plugin
 " ========================================================================
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugs')
 
 " Essentials
 Plug 'tpope/vim-commentary'
@@ -11,8 +11,9 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 
 " Interface
-Plug 'bling/vim-airline'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle'  }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
 
 " Ruby / Rails
 Plug 'tpope/vim-bundler'
@@ -23,7 +24,7 @@ Plug 'thoughtbot/vim-rspec'
 
 " Syntax
 Plug 'scrooloose/syntastic'
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee'  }
+Plug 'kchmck/vim-coffee-script'
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
@@ -32,10 +33,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
-
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
 
 " ========================================================================
 " Ruby stuff
@@ -85,8 +82,8 @@ set ruler                         " show the cursor position all the time
 set showcmd                       " display incomplete commands
 set showmatch
 set nowrap
-set backupdir=~/.tmp
-set directory=~/.tmp              " Don't clutter my dirs up with swp and tmp files
+set backupdir=~/.vim/tmp
+set directory=~/.vim/tmp          " Don't clutter my dirs up with swp and tmp files
 set autoread
 set wmh=0
 set viminfo+=!
@@ -159,4 +156,7 @@ autocmd FileType qf setlocal wrap linebreak
 " Make it more obviouser when lines are too long
 highlight ColorColumn ctermbg=235
 
+let g:solarized_termcolors=256
+set background=light
+colorscheme solarized
 

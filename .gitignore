@@ -2,5 +2,6 @@ vim/.netrwhist
 vim/.VimballRecord
 
 vimrc_local
-vim/plugged
+vim/plugs/*
+!vim/plugs/.keep
 vim/.netrwhist
