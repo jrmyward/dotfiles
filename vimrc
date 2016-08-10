@@ -156,6 +156,7 @@ autocmd FileType qf setlocal wrap linebreak
 " Make it more obviouser when lines are too long
 highlight ColorColumn ctermbg=235
 
+let g:airline_theme='solarized'
 let g:solarized_termcolors=256
 set background=light
 colorscheme solarized
