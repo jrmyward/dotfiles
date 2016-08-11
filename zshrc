@@ -14,3 +14,6 @@ path+=($NPM_PACKAGES/bin)
 
 # for Homebrew installed rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+path[1,0]=/opt/chefdk/bin
+
