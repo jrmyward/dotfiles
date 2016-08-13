@@ -14,6 +14,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Ruby / Rails
 Plug 'tpope/vim-bundler'
@@ -31,6 +32,7 @@ Plug 'altercation/vim-colors-solarized'
 
 " Tools
 Plug 'tpope/vim-fugitive'
+
 
 call plug#end()
 
@@ -125,6 +127,17 @@ set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
 " ========================================================================
 " Misc.
 " ========================================================================
+
+" Configure vim-tmux-navigator
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> {Left-mapping} :TmuxNavigateLeft<cr>
+nnoremap <silent> {Down-Mapping} :TmuxNavigateDown<cr>
+nnoremap <silent> {Up-Mapping} :TmuxNavigateUp<cr>
+nnoremap <silent> {Right-Mapping} :TmuxNavigateRight<cr>
+nnoremap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
+
+let g:tmux_navigator_save_on_switch = 0
 
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
