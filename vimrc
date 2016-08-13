@@ -40,6 +40,7 @@ call plug#end()
 " Ruby stuff
 " ========================================================================
 
+set background=light
 syntax on                 " Enable syntax highlighting
 
 augroup myfiletypes
@@ -171,6 +172,6 @@ highlight ColorColumn ctermbg=235
 
 let g:airline_theme='solarized'
 let g:solarized_termcolors=256
-set background=light
+"set background=light
 colorscheme solarized
 
