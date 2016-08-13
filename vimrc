@@ -158,6 +158,6 @@ highlight ColorColumn ctermbg=235
 
 let g:airline_theme='solarized'
 let g:solarized_termcolors=256
-set background=light
+set background=dark
 colorscheme solarized
 
