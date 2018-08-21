@@ -26,6 +26,7 @@ Plug 'thoughtbot/vim-rspec'
 " Syntax
 Plug 'scrooloose/syntastic'
 Plug 'kchmck/vim-coffee-script'
+Plug 'ntpeters/vim-better-whitespace'
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
@@ -169,8 +170,7 @@ autocmd FileType qf setlocal wrap linebreak
 " Make it more obviouser when lines are too long
 highlight ColorColumn ctermbg=235
 
-let g:airline_theme='solarized'
-let g:solarized_termcolors=256
-set background=light
-colorscheme solarized
-
+let g:airline_theme='dark'
+"let g:solarized_termcolors=256
+"set background=light
+colorscheme evening

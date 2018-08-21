@@ -4,7 +4,10 @@ DISABLE_AUTO_UPDATE="true"
 
 plugins=(git bundler brew gem)
 
+export EDITOR=/usr/local/bin/vim
+
 source $ZSH/oh-my-zsh.sh
+source ~/.bin/tmuxinator.zsh
 
 export ANDROID_HOME="brew --prefix android"
 export NPM_PACKAGES="${HOME}/.npm-packages"
