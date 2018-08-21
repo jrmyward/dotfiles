@@ -1,0 +1,28 @@
+{
+    "editor.formatOnPaste": true, 
+    "editor.rulers": [80],
+    "editor.tabSize": 2,
+    "ruby.lint": {
+        "rubocop": {
+            "lint": true,
+            "rails": true
+        }
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/tmp": true,
+        "**/coverage": true,
+        "**/log": true,
+        "**/public/uploads": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/log": true
+    }
+}
