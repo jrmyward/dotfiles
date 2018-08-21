@@ -41,6 +41,7 @@ call plug#end()
 " Ruby stuff
 " ========================================================================
 
+set background=light
 syntax on                 " Enable syntax highlighting
 
 augroup myfiletypes
